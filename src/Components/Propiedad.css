@@ -1,0 +1,16 @@
+.container-propiedad {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-propiedad-img {
+	width: 450px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.favorite-icon {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
