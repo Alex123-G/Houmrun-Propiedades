@@ -7,11 +7,3 @@ body {
 		sans-serif;
 }
 
-
-.page-container{
-		display: grid;
-	grid-template-areas:
-		"Header"
-		"Section";
-		grid-template-columns:1fr;
-}

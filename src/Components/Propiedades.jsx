@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { getPropieades } from "../services/Propieades";
 import Propiedad from "./Propiedad.jsx";
-
+import "././Propiedades.css";
 const Propiedades = () => {
 	const [propiedades, setPropiedades] = useState([]);
 

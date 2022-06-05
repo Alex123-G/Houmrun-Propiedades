@@ -1,16 +1,33 @@
 .container-propiedad {
 	display: flex;
-	flex-direction: column;
+flex-direction: column;
+	background-color: #fff;
+	box-shadow: 0px 0px 1px #000;
+	border-radius: 8px;
 }
 
 .container-propiedad-img {
-	width: 450px;
+	max-width: 380px;
 	height: 300px;
 	object-fit: cover;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+}
+
+.container-propiedad-detalle {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+
+.container-propiedad-precio{
+	font-size: 1.18em;
+	font-weight: bold;	
 }
 
 .favorite-icon {
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	cursor: pointer;
 }
