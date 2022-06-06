@@ -6,11 +6,11 @@ import selectedFavorite from "../icons/selectedFavorite.svg";
 const Propiedad = ({ propiedad }) => {
 	const dispatch = useDispatch();
 
-	const add_faviorite = propiedad => {
+	const addFavorite = propiedad => {
 		dispatch({ type: "add_favorite", payload: propiedad });
 	};
 
-	const delete_favorite = propiedad => {
+	const deleteFavorite = propiedad => {
 		dispatch({ type: "delete_favorite", payload: propiedad });
 	};
 	return (
@@ -24,9 +24,9 @@ const Propiedad = ({ propiedad }) => {
 				<span className="container-propiedad-description">{propiedad.description}</span>
 				<span className="container-propiedad-direccion">{propiedad.direccion}</span>
 				{propiedad.isFavorite ? (
-					<img src={selectedFavorite} alt="favorite" className="favorite-icon" onClick={() => delete_favorite(propiedad)} />
+					<img src={selectedFavorite} alt="favorite" className="favorite-icon" onClick={() => deleteFavorite(propiedad)} />
 				) : (
-					<img src={favorite} alt="favorite" className="favorite-icon" onClick={() => add_faviorite(propiedad)} />
+					<img src={favorite} alt="favorite" className="favorite-icon" onClick={() => addFavorite(propiedad)} />
 				)}
 			</div>
 		</div>
