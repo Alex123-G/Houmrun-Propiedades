@@ -1,17 +1,18 @@
 .container-propiedad {
 	display: flex;
-flex-direction: column;
+	flex-direction: column;
 	background-color: #fff;
 	box-shadow: 0px 0px 1px #000;
-	border-radius: 8px;
+	border-radius: 12px;
+	line-height: 1.7;
 }
 
 .container-propiedad-img {
 	max-width: 380px;
 	height: 300px;
 	object-fit: cover;
-border-top-left-radius: 8px;
-border-top-right-radius: 8px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 }
 
 .container-propiedad-detalle {
@@ -20,12 +21,24 @@ border-top-right-radius: 8px;
 	padding: 10px;
 }
 
-
-.container-propiedad-precio{
-	font-size: 1.18em;
-	font-weight: bold;	
+.container-propiedad-precio {
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
+.container-propiedad-dimensiones {
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+.container-propiedad-description {
+	font-weight: 500;
+}
+
+.container-propiedad-direccion {
+	font-weight: 300;
+	font-size: 0.8em;
+}
 .favorite-icon {
 	width: 25px;
 	height: 25px;
