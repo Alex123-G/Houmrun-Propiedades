@@ -18,9 +18,17 @@ const Header = () => {
 					Mis favoritos
 				</span>
 			</div>
-			{/* {favorite_list.map(favorite => (
-				<div key={favorite.id}>{favorite.dimensiones}</div>
-			))} */}
+			{ishidden ? (
+				<div className="container-favorite-list">
+					{favorite_list.map(favorite => (
+						<div key={favorite.id} className="favorite-item">
+							<img className="favorite-item-img" src={favorite.url_img} alt={favorite.description} />
+						</div>
+					))}
+				</div>
+			) : (
+				""
+			)}
 		</header>
 	);
 };

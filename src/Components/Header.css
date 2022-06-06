@@ -11,3 +11,24 @@
 .lista-favoritos {
 	cursor: pointer;
 }
+
+.container-favorite-list {
+	position: absolute;
+	top: 68px;
+	right: 20%;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.2);
+	padding: 5px;
+}
+
+.favorite-item-img {
+	max-width: 80px;
+	max-height: 80px;
+	object-fit: cover;
+}
+
+@media (max-width: 425px) {
+	.container-favorite-list {
+		right: 10%;
+	}
+}
