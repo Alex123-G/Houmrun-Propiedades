@@ -8,7 +8,10 @@ const Propiedad = ({ propiedad }) => {
 
 	const add_faviorite = propiedad => {
 		dispatch({ type: "add_favorite", payload: propiedad });
-		dispatch({ type: "changeIsFavorite", payload: propiedad.id });
+	};
+
+	const delete_favorite = propiedad => {
+		dispatch({ type: "delete_favorite", payload: propiedad });
 	};
 	return (
 		<div className="container-propiedad">
@@ -21,7 +24,7 @@ const Propiedad = ({ propiedad }) => {
 				<span className="container-propiedad-description">{propiedad.description}</span>
 				<span className="container-propiedad-direccion">{propiedad.direccion}</span>
 				{propiedad.isFavorite ? (
-					<img src={selectedFavorite} alt="favorite" className="favorite-icon" onClick={() => add_faviorite(propiedad)} />
+					<img src={selectedFavorite} alt="favorite" className="favorite-icon" onClick={() => delete_favorite(propiedad)} />
 				) : (
 					<img src={favorite} alt="favorite" className="favorite-icon" onClick={() => add_faviorite(propiedad)} />
 				)}
