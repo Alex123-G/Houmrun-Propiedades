@@ -24,9 +24,9 @@ const Propiedad = ({ propiedad }) => {
 				<span className="container-propiedad-description">{propiedad.description}</span>
 				<span className="container-propiedad-direccion">{propiedad.direccion}</span>
 				{propiedad.isFavorite ? (
-					<img src={selectedFavorite} alt="favorite" className="favorite-icon" onClick={() => deleteFavorite(propiedad)} />
+					<img src={selectedFavorite} alt="favorite" className="favorite-icon delete-favorite" onClick={() => deleteFavorite(propiedad)} />
 				) : (
-					<img src={favorite} alt="favorite" className="favorite-icon" onClick={() => addFavorite(propiedad)} />
+					<img src={favorite} alt="favorite" className="favorite-icon add-favorite" onClick={() => addFavorite(propiedad)} />
 				)}
 			</div>
 		</div>
