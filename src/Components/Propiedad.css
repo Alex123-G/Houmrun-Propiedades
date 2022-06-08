@@ -44,3 +44,25 @@
 	height: 25px;
 	cursor: pointer;
 }
+
+.add-favorite:active {
+	box-shadow: 0px 0px 2px 1px #fac917;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.delete-favorite:active {
+	box-shadow: 0px 0px 2px 1px #000000a2;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+@media (hover: hover) {
+	.add-favorite:hover {
+		box-shadow: 0px 0px 2px 1px #fac917;
+		transition: box-shadow 0.3s ease-in-out;
+	}
+
+	.delete-favorite:hover {
+		box-shadow: 0px 0px 2px 1px #000000a2;
+		transition: box-shadow 0.3s ease-in-out;
+	}
+}
