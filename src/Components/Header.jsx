@@ -20,6 +20,28 @@ const Header = () => {
 					Mis favoritos
 				</span>
 
+				{favorite_list.length > 0 ? (
+					ishidden ? (
+						<div className="container-favorite-list">
+							{favorite_list.map(favorite => (
+								<div key={favorite.id} className="favorite-item">
+									<img className="favorite-item-img" src={favorite.url_img} alt={favorite.description} />
+								</div>
+							))}
+						</div>
+					) : (
+						""
+					)
+				) : (
+					""
+				)}
+			</div>
+		</header>
+	);
+};
+
+export default Header;
+/*
 				{ishidden ? (
 					<div className="container-favorite-list">
 						{favorite_list.map(favorite => (
@@ -31,9 +53,4 @@ const Header = () => {
 				) : (
 					""
 				)}
-			</div>
-		</header>
-	);
-};
-
-export default Header;
+*/

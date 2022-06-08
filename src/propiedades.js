@@ -140,7 +140,7 @@ export const propiedades = [
 		dimensiones: "140 m² totales",
 		tipo: "En venta",
 		url_img: "https://http2.mlstatic.com/D_NQ_NP_996242-MPE47354621073_092021-O.webp",
-		isFavorite: true,
+		isFavorite: false,
 	},
 	{
 		id: 14,
