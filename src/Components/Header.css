@@ -12,10 +12,13 @@
 	cursor: pointer;
 }
 
+.header-container-favorite-list {
+	position: relative;
+}
+
 .container-favorite-list {
 	position: absolute;
-	top: 68px;
-	right: 20%;
+	top: 30px;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.2);
 	z-index: 1;
@@ -32,10 +35,4 @@
 	max-width: 85px;
 	height: 70px;
 	object-fit: cover;
-}
-
-@media (max-width: 425px) {
-	.container-favorite-list {
-		right: 10%;
-	}
 }

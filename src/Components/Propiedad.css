@@ -70,3 +70,9 @@
 		transition: box-shadow 0.3s ease-in-out;
 	}
 }
+
+@media (max-width: 736px) {
+	.container-propiedad-img {
+		max-width: 540px;
+	}
+}

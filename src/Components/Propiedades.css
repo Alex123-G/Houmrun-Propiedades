@@ -7,8 +7,9 @@
 	justify-content: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 736px) {
 	.container-propiedades {
+		grid-template-columns: repeat(auto-fill, minmax(380px, 540px));
 		padding: 0 5px;
 	}
 }
