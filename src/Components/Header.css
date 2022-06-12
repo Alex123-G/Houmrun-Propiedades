@@ -6,6 +6,7 @@
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
+	grid-area: Header;
 }
 
 .lista-favoritos {

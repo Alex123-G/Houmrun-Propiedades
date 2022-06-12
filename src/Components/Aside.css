@@ -1,0 +1,18 @@
+.aside {
+	grid-area: Aside;
+	background-color: red;
+	/* position: relative; */
+}
+
+.aside-list {
+	background-color: blue;
+	color: white;
+	/* position: absolute; */
+}
+
+.container-list {
+	text-decoration: none;
+	list-style: none;
+}
+.list-item {
+}
