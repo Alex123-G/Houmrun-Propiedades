@@ -6,11 +6,11 @@ import selectedFavorite from "../icons/selectedFavorite.svg";
 const Propiedad = ({ propiedad }) => {
 	const dispatch = useDispatch();
 
-	const addFavorite = propiedad => {
+	const addFavorite = (propiedad) => {
 		dispatch({ type: "add_favorite", payload: propiedad });
 	};
 
-	const deleteFavorite = propiedad => {
+	const deleteFavorite = (propiedad) => {
 		dispatch({ type: "delete_favorite", payload: propiedad });
 	};
 	return (

@@ -9,20 +9,24 @@ const Aside = () => {
 				<ul className="container-list">
 					<a href="#" className="list-item">
 						<span>Por fecha</span>
-						<img src={plusIcon} alt="plusIcon" width="9px" height="9px" />
+						<img src={plusIcon} alt="plusIcon" width="10px" height="10px" />
 					</a>
-					<li>
-						<a href="#" className="list-item">
-							<span>Para rentar o comprar</span>
-							<img src={plusIcon} alt="plusIcon" width="9px" height="9px" />
-						</a>
-					</li>
-					<li>
+
+					<a href="#" className="list-item">
+						<span>Rentar</span>
+						<img src={plusIcon} alt="plusIcon" width="10px" height="10px" />
+					</a>
+
+					<a href="#" className="list-item">
+						<span>Comprar</span>
+						<img src={plusIcon} alt="plusIcon" width="10px" height="10px" />
+					</a>
+					{/* <li>
 						<a href="#" className="list-item">
 							<span>Por precio</span>
-							<img src={plusIcon} alt="plusIcon" width="9px" height="9px" />
+							<img src={plusIcon} alt="plusIcon" width="10px" height="10px" />
 						</a>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 		</aside>

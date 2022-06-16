@@ -5,10 +5,9 @@
 }
 
 .aside-list {
-	background-color: blue;
 	position: absolute;
-	top: 8%;
-	right: 0;
+	top: 4%;
+	left: 0;
 }
 
 .aside-list a:link,
@@ -27,4 +26,5 @@ a:active {
 	display: flex;
 	align-items: baseline;
 	gap: 15px;
+	justify-content: space-between;
 }
