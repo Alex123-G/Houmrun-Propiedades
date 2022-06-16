@@ -1,13 +1,22 @@
 .aside {
 	grid-area: Aside;
-	background-color: red;
-	/* position: relative; */
+	/* background-color: red; */
+	position: relative;
 }
 
 .aside-list {
 	background-color: blue;
-	color: white;
-	/* position: absolute; */
+	position: absolute;
+	top: 8%;
+	right: 0;
+}
+
+.aside-list a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #000000;
+	text-decoration: none;
 }
 
 .container-list {
@@ -15,4 +24,7 @@
 	list-style: none;
 }
 .list-item {
+	display: flex;
+	align-items: baseline;
+	gap: 15px;
 }
